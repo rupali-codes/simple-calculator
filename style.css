@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* transition: all .5s; */
+    font-family: 'Spartan', sans-serif;
+}
+
+body {
+    display: flex;
+    height: 700px;
+    background-color: hsl(222, 26%, 31%);
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
+
+.theme {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h2 {
+    flex: 60%;
+    text-transform: lowercase;
+    transition: all .5s;
+}
+
+.theme-number {
+    flex: 40%;
+}
+
+P {
+    align-self: flex-end;
+}
+
+.switch {
+    word-spacing: 20px;
+}
+
+.toggle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar {
+    padding: 10px;
+    background-color: hsl(223, 31%, 20%);
+    position: relative;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+.circle {
+    position: absolute;
+    background-color: hsl(6, 63%, 50%);
+    padding: 7px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .5s;
+    left: 10%;
+}
+
+h2 {
+    align-self: flex-end;
+}
+
+.cal-container {
+    margin: auto;
+    width: 450px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+#reset-button,
+#del-button {
+    background-color: hsl(225, 21%, 49%);
+    color: white;
+    transition: all .5s;
+    box-shadow: 0 4px hsl(224, 28%, 35%);
+}
+
+#reset-button:active,
+#del-button:active,
+#equals-button:active {
+    box-shadow: none;
+}
+
+.button-container {
+    transition: all .5s;
+    background-color: hsl(223, 31%, 20%);
+}
+
+button {
+    flex-basis: 20%;
+    padding: 12px;
+    margin: 9px;
+    font-size: 32px;
+    text-transform: uppercase;
+    border-radius: 9px;
+    border: none;
+    box-shadow: 0 4px rgb(177, 176, 176);
+    transition: all .5s;
+    font-weight: bold;
+}
+
+#reset-button,
+#equals-button {
+    flex-basis: 45%;
+}
+
+.output {
+    height: initial;
+    background-color: hsl(224, 36%, 15%);
+    transition: all .5s;
+    margin: 15px 0;
+    padding: 2rem;
+    width: 100%;
+}
+#isEqual{
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgba(255, 255,255, 0.6);
+}
+
+#equals-button {
+    background-color: hsl(6, 63%, 50%);
+    box-shadow: 0 4px hsl(6, 70%, 34%);
+    transition: all .5s;
+    color: white;
+}
+
+span,
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    box-shadow: none;
+}
+
+/*=====================================================================================*/
+/*media query*/
+@media (max-width: 470px){
+    .theme{
+        margin: 1rem;
+    }
+
+    .theme-number{
+        font-size: 0.6rem;
+    }
+
+    h2{
+        text-transform: uppercase;
+        font-family: cursive;
+        font-size: 1.5rem;
+    }
+
+    .output {
+        /*margin: 15px;*/
+        height: initial;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    button {
+        padding: 5px;
+        margin: 5px;
+        font-size: 20px;
+        box-shadow: 0 2px rgb(177, 176, 176);
+    }
+    .cal-container {
+        margin: 2rem 0.5rem;
+    }
+
+}
