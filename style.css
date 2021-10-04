@@ -118,16 +118,17 @@ button {
 
 .output {
     height: initial;
-    background-color: hsl(224, 36%, 15%);
     transition: all .5s;
     margin: 15px 0;
-    padding: 2rem;
-    width: 100%;
+    background-color: rgba(255, 255,255, 0.6);
+    padding: 1rem;
 }
 #isEqual{
     text-align: center;
     font-size: 1.5rem;
-    color: rgba(255, 255,255, 0.6);
+    width: initial;
+    color: grey;
+    overflow-wrap: break-word;
 }
 
 #equals-button {
